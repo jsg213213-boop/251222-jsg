@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 화면</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Malgun Gothic', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* 헤더 스타일 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #000;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.top-menu span {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+/* 프로필 아이콘 부분 */
+.profile-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #E6D8FF; /* 보라색 느낌의 배경 */
+    border: 1px solid #9B72FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-circle i {
+    color: #6A1B9A;
+    font-size: 20px;
+}
+
+/* 컨테이너 (좌측메뉴 + 본문) */
+.container {
+    display: flex;
+    flex: 1; /* 남은 공간 모두 차지 */
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-menu {
+    width: 250px;
+    background-color: #E0E0E0;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    flex: 1;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 푸터 스타일 */
+footer {
+    height: 150px;
+    background-color: #999999;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+    </style>
+<body>
+
+    <header>
+        <div class="logo">LOGO</div>
+        <nav class="top-menu">
+            <span>메뉴 1</span>
+            <span>메뉴 2</span>
+            <span>메뉴 3</span>
+        </nav>
+        <div class="profile-section">
+            <div class="profile-circle">
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside class="left-menu">
+            좌측메뉴
+        </aside>
+        <section class="content">
+            본문
+        </section>
+    </main>
+
+    <footer>
+        copyright 2025 정성규
+    </footer>
+
+</body>
+</html>
